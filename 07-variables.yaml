@@ -6,4 +6,4 @@
   tasks:
   - name: print the varables from file
     debug:
-      msg: "i am learning {{ ansible }} from {{ trainer }}, duration is {{ duration }}"
+      msg: "i am learning {{ course }} from {{ trainer }}, duration is {{ duration }}"
