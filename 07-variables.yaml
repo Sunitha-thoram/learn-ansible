@@ -1,0 +1,9 @@
+- name: variables form files
+  hosts: local
+  connection: local
+  vars_files:
+    - course.yaml
+  tasks:
+  - name: print the varables from file
+    debug:
+      msg: "i am learning {{ ansible }} from {{ trainer }}, duration is {{ duration }}"
