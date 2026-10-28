@@ -1,10 +1,16 @@
-- name: install nginx in redhat or ubuntu
+- name: print OS is RedHat or not
   hosts: local
   become: yes
   connection: local
   tasks:
-  - name: install nginx in redhat
+  - name: Install nginx in RedHat
     dnf:
-      name: nginx
       state: present
-    when: ansible_facts.os_family == "Redhat"
+      name: nginx
+    when: ansible_facts.os_family == "RedHat"
+
+  - name: Install nginx in debian
+    apt:
+      state: present
+      name: nginx
+    when: ansible_facts.os_family == "Debian"
