@@ -7,9 +7,9 @@
       property: "100 acrs"
     debug:
       msg: "i got {{ property }} from my grandmother"
-  tasks:
+  
   - name: print the variables again
     vars:
-      property: 10 acrs
+      property: "10 acrs"
     debug:
       msg: " i got {{ property }} from my grandmother"  
