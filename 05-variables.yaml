@@ -6,7 +6,7 @@
     trainer: sunitha
     duration: 2hrs
     timings: 6am-8am
-  tasks: 
-  debug:
-    msg: "iam learning {{ course }} from {{ trainer }}, duration is {{ duration}} and timings is {{ timings }}"
-    
+  tasks:
+  - name: print the variables 
+    debug:
+      msg: "iam learning {{ course }} from {{ trainer }}, duration is {{ duration}} and timings is {{ timings }}"
