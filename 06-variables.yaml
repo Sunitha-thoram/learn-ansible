@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-  property: 100 acres
+    property: 100 acres
   tasks:
   - name: print the variables
     debug:
