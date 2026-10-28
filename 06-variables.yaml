@@ -8,5 +8,11 @@
     debug:
       msg: "i got {{ property }} from my grandfather"
 
+  - name: print the variables again
+    vars:
+      property: 10 acres
+    debug:
+      msg: "i got {{ property }} from my grandfather"
+
 
     
