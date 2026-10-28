@@ -1,0 +1,31 @@
+- name: PLAY1
+  hosts: local
+  connection: local
+  tasks: 
+  - name: PLAY1 task1
+    debug: 
+    msg: ansible playbook1 task1
+
+  tasks: 
+  - name: PLAY1 task2
+    debug:
+    msg: ansible playbook1 task2
+
+
+
+- name: PLAY2
+  hosts: local
+  connection: local
+  tasks:
+  - name: PLAY2 task1
+    debug:
+    msg: ansible playbook2 task1
+
+
+  tasks:
+  - name: PLAY2 task2
+    debug:
+    msg: ansible playbook2 task2
+
+
+  
