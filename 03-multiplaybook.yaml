@@ -4,12 +4,12 @@
   tasks: 
   - name: PLAY1 task1
     debug: 
-    msg: "ansible playbook1 task1"
+      msg: "ansible playbook1 task1"
 
   tasks: 
   - name: PLAY1 task2
     debug:
-    msg: "ansible playbook1 task2"
+      msg: "ansible playbook1 task2"
 
 
 
@@ -19,13 +19,13 @@
   tasks:
   - name: PLAY2 task1
     debug:
-    msg: "ansible playbook2 task1"
+     msg: "ansible playbook2 task1"
 
 
   tasks:
   - name: PLAY2 task2
     debug:
-    msg: "ansible playbook2 task2"
+      msg: "ansible playbook2 task2"
 
 
   
