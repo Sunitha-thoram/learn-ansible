@@ -9,6 +9,6 @@
   - name: print some information
     debug:
       msg: |
-        os_family: "{{ ansible_facts['os_family'] }}"
-        private_ip: "{{ ansible_facts['default_ipv4']['addresses'] }}"
-        private_ip: "{{ ansible_facts.default_ipv4.addresses }}"
+        os_family: {{ ansible_facts['os_family'] }}
+        private_ip: {{ ansible_facts['default_ipv4']['addresses'] }}
+        private_ip: {{ ansible_facts.default_ipv4.addresses }}
