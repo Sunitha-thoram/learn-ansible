@@ -1,0 +1,16 @@
+- name: print the varables from prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: username
+    prompt: please enter username
+    private: false
+
+  - name: password
+    prompt: please enter password
+    private: true
+  
+  tasks:
+  - name: please print username and passwd details
+    debug:
+      msg: "{{ username }} and {{ password }} "
