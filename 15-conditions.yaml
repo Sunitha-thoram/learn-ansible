@@ -9,6 +9,7 @@
     state: present
   when: ansible_facts.os_family == 'Redhat'
 
+  tasks:
   - name: install nginx in ubuntu
   apt:
     name: nginx
