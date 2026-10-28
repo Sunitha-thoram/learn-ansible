@@ -21,3 +21,8 @@
     debug:
       msg: |
         name: {{ course }} : {{ course | type_debug }}
+        duration: {{ duration }} : {{ duration | type_debug }}
+        is_live_session: {{ is_live_session}} : {{ is_live_session | type_debug }}
+        topics: {{ topics }} : {{ topics | type_debug }}
+        more_detais: {{ more_detais }} : {{ more_detais | type_debug }}
+        exact_duration: {{ exact_duration }} : {{ exact_duration | type_debug }}
