@@ -1,0 +1,23 @@
+- name: course information
+  hosts: local
+  connection: local
+  vars:
+    course: "AIOPS with devops on aws"
+    duration: 6 months
+    is_live_session: yes
+    topics:
+    - linux
+    - ansible
+    - aws
+    - terraform
+    - kubernetties
+    - scripting
+    more_detais:
+      trainer: Shiva
+      months: 4
+    exact_duration: 4 months
+  tasks:
+  - name: print course info
+    debug:
+      msg: |
+        name: {{ course }} : {{ course | type_course }}
