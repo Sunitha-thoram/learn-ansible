@@ -20,4 +20,4 @@
   - name: print course info
     debug:
       msg: |
-        name: {{ course }} : {{ course | type_course }}
+        name: {{ course }} : {{ course | type_debug }}
