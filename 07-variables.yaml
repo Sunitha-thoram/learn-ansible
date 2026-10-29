@@ -3,7 +3,7 @@
   connection : local
   var_files :
   - course.yaml
-tasks : 
+  tasks : 
 - name : print course information
   debug :
     msg : "hi i am learning {{ course }} from{{ trainer }}  duration is {{ duration }}"
