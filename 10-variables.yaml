@@ -4,5 +4,5 @@
   tasks: 
   - name: print the greetings
     debug:
-      msg: " hello {{ person name }}"
+      msg: " hello {{ person_name }}"
 
