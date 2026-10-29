@@ -1,6 +1,6 @@
 - name: variables from files
   hosts: local
-  cnnection: local
+  conection: local
   vars:
     course: "variables from play"
   vars_prompt:
