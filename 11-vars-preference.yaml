@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    course: "variables from play"
+   course: "variables from play"
   vars_prompt:
   - name: course
     prompt: please enter your course   
