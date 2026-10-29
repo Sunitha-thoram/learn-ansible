@@ -5,11 +5,11 @@
   - name: username
     prompt: please enter username
     private: false
-
   - name: password
     prompt: plese enter prompt
     private: true
 
-  tasks: please print username and password
+  tasks: 
+  - name: print the username and password
   debug:
     msg: "{{ username }}and{{ password }}"
