@@ -1,14 +1,8 @@
-- name: gather facts
+- name: print facts
   hosts: local
-  connection: local
+  conection: local
   tasks:
-  - name: print ansible facts
-    debug:
-      msg: "{{ ansible_facts }}"
-  
-  - name: print some info
-    debug:
-      msg: |
-        OS Family: {{ ansible_facts['os_family'] }}
-        private_ip: {{ ansible_facts.default_ipv4.address }}
-        private_ip: {{ ansible_facts['default_ipv4']['address'] }}
+   - name: print the facts
+     debug:
+       msg: "{{ ansible_facts}}"
+       
