@@ -1,6 +1,6 @@
-- name: print the varables from inventory
-  hosts: Frontend
-  tasks:
-  - name: print the varables from inventory
-    debug:
-      msg: "i am learning {{ course }} from {{ trainer }}, duration is {{ duration }}"
+- name: print the variables from inventory
+  hosts: frontend
+  tasks: 
+  - name: print the variables from inventory
+    debug: 
+     msg: " iam learning {{ course }} from {{ trainer }} duration is {{ duration }}" 
